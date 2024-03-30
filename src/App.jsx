@@ -12,12 +12,12 @@ import "./App.css";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-  { src: "/memory-card/public/img/cat1_resize.jpeg", matched: false },
-  { src: "/memory-card/public/img/cat2_resize.jpeg", matched: false },
-  { src: "/memory-card/public/img/cat3_resize.jpeg", matched: false },
-  { src: "/memory-card/public/img/cat4_resize.jpeg", matched: false },
-  { src: "/memory-card/public/img/cat5_resize.jpeg", matched: false },
-  { src: "/memory-card/public/img/cat6_resize.jpeg", matched: false },
+  { src: "./img/cat1_resize.jpeg", matched: false },
+  { src: "./img/cat2_resize.jpeg", matched: false },
+  { src: "./img/cat3_resize.jpeg", matched: false },
+  { src: "./img/cat4_resize.jpeg", matched: false },
+  { src: "./img/cat5_resize.jpeg", matched: false },
+  { src: "./img/cat6_resize.jpeg", matched: false },
 ];
 
 function App() {

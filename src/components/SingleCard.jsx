@@ -13,7 +13,7 @@ export default function SingleCard({ card, handleChoice, flipped, disabled }) {
         <img className="card-face" src={card.src} alt="card front" />
         <img
           className="card-back"
-          src="/memory-card/public/img/cardcover_resize.jpeg"
+          src="./img/cardcover_resize.jpeg"
           onClick={handleClick}
           alt="cover"
         />
