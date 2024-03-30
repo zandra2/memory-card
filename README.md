@@ -1,5 +1,5 @@
 # Memory Card
-This is a game where the player gets to selects two cards and flip over. If the two cards matches, they remain face up. If not, they are flipped face down again. 
+This is a game where the player gets to select two cards and flip over. If the two cards match, they remain face up. If not, they are flipped face down again.  
 
 The objective is to match all the pairs of cards with the least number of attempts. The game ends when all pairs are successfully matched.
 
@@ -46,27 +46,21 @@ $ npm run dev
 ## Deployment
 `Deployment setup`
 
-Open **vite.config.js** add _base: "/repo-name/"_
+Open **vite.config.js** add **base: "/repo-name/"**
 ```
 export default defineConfig({
   plugins: [react()],
   base: "/memory-card/"
 })
 ```
-Create a new .github folder inside the main directory. 
-1. add a **workflows ** folder
+Create a new **.github** folder inside the main directory. 
+1. add a **workflows** folder
 2. add a file called **deploy.yml** inside the **workflows** folder and pasted in deployment setup code
 
-##Github Setup
+## Github Setup
 After creating a new repository on Github follow the following instruction
 
-If after initializing git and `main` branch is called `master`. Run the following command before **git branch -M main** to change `master` branch to `main` branch.
-
-```
-git branch -m master main
-```
-
-###…or create a new repository on the command line
+### …or create a new repository on the command line
 ```
 git init
 git add README.md
@@ -76,13 +70,25 @@ git remote add origin https://github.com/zandra2/memory-card.git
 git push -u origin main
 ```
 
-###…or push an existing repository from the command line
+Note: 
+1. `git add README.md` is optional
+2. `git branch -M main` only runs this command if the initial setup branch is `main`. Otherwise, to change `master` branch to `main` branch. Run the following command before **git branch -M main** to change the initial branch name
+
+```
+git branch -m master main
+```
+
+### …or push an existing repository from the command line
 ```
 git remote add origin https://github.com/zandra2/memory-card.git
 git branch -M main
 git push -u origin main
 ```
 
+Once that is done go to the following path
+```
+Settings -> actions -> general -> workflow permissions
+```
+Look for **workflow permissions** and select `Read and write permissions` then click **save**. This is to allow future edits. 
 
-
-
+One that is done. Click **Actions** tab and troubleshoot deployment issues if there’s any. Otherwise, **Congratulations** you have successfully deployed your game app. 
