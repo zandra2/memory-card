@@ -91,4 +91,20 @@ Settings -> actions -> general -> workflow permissions
 ```
 Look for **workflow permissions** and select `Read and write permissions` then click **save**. This is to allow future edits. 
 
-One that is done. Click **Actions** tab and troubleshoot deployment issues if there’s any. Otherwise, **Congratulations** you have successfully deployed your game app. 
+One that is done. Click **Actions** tab and troubleshoot deployment issues if there’s any. Otherwise, Go to:
+
+```
+settings -> pages -> branch
+```
+Under **Branch** select `gh-pages` and click **save**
+
+Once the `gh-pages` is set up. Check the **Action** tab to see `pages build and development` progress. 
+
+After it is successful, go to and find your website url under the `Github pages`
+```
+settings -> pages -> Github pages
+```
+
+**Congratulations** you have successfully deployed your application!!
+
+Note: future modifications on application will get an automatic re-build and deploy after each git push. 
