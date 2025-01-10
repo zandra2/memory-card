@@ -108,3 +108,6 @@ settings -> pages -> Github pages
 **Congratulations** you have successfully deployed your application!!
 
 Note: future modifications on application will get an automatic re-build and deploy after each git push. 
+
+**To Play the game**
+https://zandra2.github.io/memory-card/
